@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 from flask import request
 from typing import Dict
-import uvicorn
 from utils.transcriber import transcribe_youtube_video
 app = Flask(__name__)
 
@@ -16,4 +15,5 @@ def transcribe_youtube():
     return caption
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+        app.run(debug=True)
+
