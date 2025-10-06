@@ -121,5 +121,5 @@ console.log(data.transcribe);
 ## 📜 License
 
 MIT — do whatever you want, just don’t sell it as your “AI-powered transcription startup”.
-
+(rn this has no auth check or internal auth check make sure to implement one of your publishing if just for mvp then fk auth)
 ---
